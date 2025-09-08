@@ -849,3 +849,30 @@ section {
     font-size: 1.4rem;
   }
 }
+/* Neon Pink & Black Toastify Theme */
+.Toastify__toast {
+  background: #0a0a0a; /* black background */
+  color: #ff4da6; /* neon pink text */
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ff4da6;
+  box-shadow: 0 0 15px #ff4da6, 0 0 25px #ff4da6;
+  border-radius: 12px;
+}
+
+.Toastify__toast--success {
+  border-left: 6px solid #39ff14; /* neon green for success */
+  box-shadow: 0 0 15px #39ff14, 0 0 25px #39ff14;
+}
+
+.Toastify__toast--error {
+  border-left: 6px solid #ff073a; /* neon red for error */
+  box-shadow: 0 0 15px #ff073a, 0 0 25px #ff073a;
+}
+
+.Toastify__progress-bar {
+  background: #ff4da6; /* neon pink progress bar */
+}
+
+.Toastify__close-button {
+  color: #ff4da6;
+}

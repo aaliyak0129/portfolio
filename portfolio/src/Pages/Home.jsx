@@ -1,6 +1,7 @@
 import React, { useState, useEffect,useRef } from "react";
 import { FaCamera, FaLaptopCode, FaPaintBrush, FaPalette, FaUtensils, FaVideo } from "react-icons/fa";
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import heroVideo from "../video/v1.mp4";
 import emailjs from "@emailjs/browser";
@@ -37,16 +38,16 @@ export default function Home() {
         form.current,
         "CO--9Uc56J2HjYY3t"  // Your Public Key
       )
-      .then(
-        () => {
-          alert("✅ Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          alert("❌ Something went wrong. Try again!");
-          console.error(error.text);
-        }
-      );
+.then(
+  () => {
+    toast.success("✅ Message sent successfully!");
+    form.current.reset();
+  },
+  (error) => {
+    toast.error("❌ Something went wrong. Try again!");
+    console.error(error.text);
+  }
+);
   };
 
   // Framer Motion Variants
