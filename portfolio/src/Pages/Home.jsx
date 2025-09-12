@@ -299,7 +299,7 @@ transition={{ duration: 0.1, ease: "easeOut", delay: 0.1 }}
       <div className="timeline-content">
         <h3>MERN Stack Developer Intern</h3>
         <span className="timeline-date">Cybrom Technology Pvt. Ltd. | June 2025 – Present</span>
-        <p>Working on full-stack applications using React, Node.js, Express.js, and MongoDB.  
+        <p>Working on CRM applications using React, Node.js, Express.js, and MYSQL.  
         Gained real-world exposure to API integration, database management, and deploying apps to cloud platforms.</p>
       </div>
     </motion.div>
